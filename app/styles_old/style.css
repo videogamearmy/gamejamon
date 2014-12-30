@@ -1,20 +1,10 @@
-/*------------------------------------------------------------------
-Main Style Stylesheet
-Project:		LearnGo Education Learning Landing Page
-Version:	    1.0
-Create Date:	06/22/2014
-Last change:	06/22/2014
-Primary use:	Education 
-Color:	10 Option 
-Website: http://ideathemes.com/themes/html/LearnGo
--------------------------------------------------------------------*/
 /*
 * body
 1	+ Header / #header
 2	+ Banner / #banner
 3	+ Content / #content
 	3 (1)	+ Features / #features_bg
-	3 (2)	+ LearnGo Settings Features /  .learngo 
+	3 (2)	+ Main Settings Features /  .main 
 	3 (3)	+ Perfect Analitic Lessons /   #lesson 
 	3 (4)	+ Learn Achievements /  #achievements 
 	3 (5)	+ Test Learn Videos Play! / #vedio 
@@ -28,7 +18,7 @@ Website: http://ideathemes.com/themes/html/LearnGo
 */
 
 /*----- Main Layout ---------*/
-@import "learngo.css";
+@import "main.css";
 /*----- ionicons Fonts Icons ---------*/
 @import "fonts/ionicons.min.css";
 /*----- PrettyPhoto ---------*/
@@ -223,7 +213,7 @@ header {
 	width: 100%;
 	top: 0px;
 	z-index: 999;
-	background: #fff;
+	background: #000;
 }
 header .logo {
 	float: left;
@@ -332,14 +322,14 @@ header nav li {
 	width: 50%;
 	background-color: white;
 }
-.learngo {
+.main {
 	padding: 60px 0;
 }
-.learngo h4.border {
+.main h4.border {
 	border-bottom: 1px solid #fff;
 	padding-bottom: 10px;
 }
-.learngo p {
+.main p {
 	font-size: 16px;
 	margin-top: 10px;
 }
@@ -349,7 +339,7 @@ header nav li {
 .features_services h4 {
 	margin-top: 15px;
 }
-.learngo span {
+.main span {
 	color: #de5749;
 }
 .features_services li:nth-child(1) {
@@ -1221,7 +1211,7 @@ a.plus {
 ========================================================*/
 #footer {
 	padding: 40px 0;
-	background: url(../images/footer_bg.jpg) fixed center no-repeat;
+	background: #000 fixed center no-repeat;
 	background-size: cover;
 }
 #footer h2 {
@@ -1371,7 +1361,7 @@ header .social_icons {
 	text-decoration: none;
 	text-align: center;
 	color: #919191 !important;
-	background: #fff;
+	background: #000;
 }
 .social_icons a:hover i {
 	-webkit-border-radius: 100%;
