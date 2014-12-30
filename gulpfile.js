@@ -66,6 +66,12 @@ gulp.task('styles_old', function () {
     .pipe(gulp.dest('dist/styles_old'))
 });
 
+// Copy Styles_old To Dist
+gulp.task('rs_plugin', function () {
+  return gulp.src(['app/rs_plugin/**'])
+    .pipe(gulp.dest('dist/rs_plugin'))
+});
+
 // Compile and Automatically Prefix Stylesheets
 gulp.task('styles', function () {
   // For best performance, don't add Sass partials to `gulp.src`
@@ -159,7 +165,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', 'styles_old', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', 'styles_old', 'rs_plugin', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights
